@@ -1,0 +1,31 @@
+int a = 200;
+int b = -69;
+int@ d = $a;
+
+/* Reduces a value by a given ammount
+ * @param value		The value to reduce
+ * @param ammount	The ammount to reduce by
+ * @return		The reduced value
+*/
+int reduce_by(int value, int ammount);
+
+// Comment
+void main() {
+	static int C;
+
+	a /= 10;
+	if (a > 50) {
+		C = 1;	
+	}
+	else {
+		C = 0;
+	}	
+
+	b = reduce_by(b, 4);
+
+	return;
+}
+
+int reduce_by(int value, int ammount) {
+	return value - ammount;
+}
